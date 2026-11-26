@@ -101,7 +101,7 @@ a:hover {
 }
 
 .section {
-  padding-block: 1rem;
+  padding-block: 2rem;
 }
 
 .section > h2 {
@@ -141,7 +141,7 @@ a:hover {
 
 /*hero*/
 .hero {
-  padding-top: 4.5rem;
+  padding-top: 0.5rem;
   padding-bottom: 3rem;
 }
 
@@ -167,12 +167,19 @@ a:hover {
 }
 
 .hero h1 {
-  margin: 0 0 1.25rem;
+  margin: 0 0 0.4rem;
   font-family: var(--font-name);
   font-size: clamp(2.75rem, 9vw, 5.5rem);
   font-weight: 400;
   line-height: 1.05;
   letter-spacing: 0.01em;
+  color: var(--name);
+}
+.hero .subtitle {
+  margin: 0 0 1.25rem;
+  font-family: var(--font-name);
+  font-size: clamp(1.5rem, 4.5vw, 2.5rem);
+  line-height: 1.1;
   color: var(--name);
 }
 
@@ -210,15 +217,6 @@ a:hover {
   border-color: var(--sage);
 }
 
-button-primary {
-  background: var(--button-bg);
-  border-color: var(--button-bg);
-  color: var(--button-text);
-}
-.button-primary:hover {
-  border-color: var(--button-bg);
-}
-
 /*about*/
 .about-body {
   max-width: 40rem;
@@ -231,7 +229,7 @@ button-primary {
   border-radius: var(--radius);
   padding: 1.5rem;
   transition:
-    transform 0.3s var(ease),
+    transform 0.3s var(--ease),
     box-shadow 0.3s var(--ease),
     border-color 0.3s ease;
 }
@@ -253,7 +251,7 @@ button-primary {
 
 .project:hover {
   transform: translateY(-4px);
-  border: var(--sage);
+  border-color: var(--sage);
   box-shadow: 0 12px 28px -12px var(--shadow);
 }
 
@@ -345,7 +343,7 @@ code {
 
 .timeline h3 {
   margin: 0 0 0.3rem;
-  font-size: 1.875rem;
+  font-size: 1.1875rem;
   font-weight: 700;
 }
 
@@ -356,7 +354,7 @@ code {
 
 .when {
   font-size: 0.9375rem;
-  margin-bottom: 0.15 !important;
+  margin-bottom: 0.15rem !important;
 }
 
 /*contact*/
@@ -378,6 +376,11 @@ code {
   font-size: clamp(1.25rem, 4vw, 1.875rem);
   font-weight: 700;
   overflow-wrap: anywhere;
+}
+.contact-discord {
+  margin: 0.75rem 0 0;
+  font-size: 1.125rem;
+  color: var(--ink-soft);
 }
 
 /*footer*/
@@ -414,6 +417,6 @@ code {
     padding-top: 2.5rem;
   }
   .section {
-    padding-block: 3rem;
+    padding-block: 1rem;
   }
 }
